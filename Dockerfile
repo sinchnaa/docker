@@ -2,4 +2,4 @@ FROM ubuntu:18.04
 RUN apt-get update
 RUN apt install nginx -y
 EXPOSE 80
-CMD [“echo”,”Image created”]
+CMD ["nginx", "-g", "daemon off;"]
