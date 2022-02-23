@@ -1,4 +1,4 @@
-sudo apt-get update
-sudo apt install docker.io
-sudo docker pull nginx
-sudo docker run -d -t -p 80:80 nginx
+FROM ubuntu:18.04
+RUN apt-get update
+RUN apt install nginx  -y
+CMD [“echo”,”Image created”]
